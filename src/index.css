@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes floatUp {
+    from {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-120vh) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  /* base styling for each heart */
+  .heart {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5rem;
+    pointer-events: none;
+    animation-name: floatUp;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+  }
+  
